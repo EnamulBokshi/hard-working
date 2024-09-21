@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.OverLey{
+    height:100% !important;
+    /* width:100% !important; */
+    background-image-opacity:0.3;
+    background:rgba(0,0,0,0.7) !important;
+}
+.OverLeyWithImage{
+    background-image:url('./assests/images/Thumb1.jpeg') no-repeat ;
+
+}
