@@ -3,6 +3,7 @@ import {Check,CheckCheck} from 'lucide-react'
 const OurActivities = ({h1,pra})=>{
 
         return(
+            
             <>
                 <div className="py-10">
                    <h1 className={h1}>
