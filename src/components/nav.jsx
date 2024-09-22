@@ -1,4 +1,4 @@
-// import{Menu,X,Locate} from 'lucide-react'
+import{Menu,X,Locate} from 'lucide-react'
 import { MenuItems } from "./constants";
 import logo from "../assets/logo.jpg";
 import { useState } from "react";
@@ -28,17 +28,17 @@ export default function Nav() {
               <a href={item.href}>{item.label}</a>
             </li>
           ))}
-           {/* <Locate  className="inline text-green-400"/> <Menu className='text-neutral-50'/> <X className='text-neutral-50'/>*/}
+    
         </ul>
-        <div className="hidden lg:flex justify-center items-center spapce-x-6">
+        <div className="hidden lg:flex justify-center items-center spapce-x-6  duration-100">
           <button className="py-2 px-3 rounded flex justify-center space-x-1 items-center bg-slate-200 text-gray-700 hover:ring-2 ring-yellow-400">
-          <span className='text-xl text-green-400'> Our Location</span>
+          <span className='text-xl text-green-400'> Our Location <Locate  className="inline text-green-400"/></span>
           </button>
         </div>
         <div className="lg:hidden md:flex flex-col justify-end">
-            <button className='' onClick={toggler}>
+            <button className='duration-100' onClick={toggler}>
                 {
-                    MenuToggler ? "M" :" &times;"
+                    MenuToggler ? <Menu className='text-neutral-50'/> :<X className='text-neutral-50'/>
                 }
             </button>
         </div>

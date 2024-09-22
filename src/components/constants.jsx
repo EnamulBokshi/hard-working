@@ -89,7 +89,7 @@ export const datasStored = [
 ]
 
 export const brands = [
-    '/src/assets/brands/down.png',
+    'src/assets/brands/down.png',
     'src/assets/brands/campsa-4.svg',
     'src/assets/brands/dji-1.svg',
     'src/assets/brands/e-talk.svg',
