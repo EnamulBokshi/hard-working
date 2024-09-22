@@ -1,5 +1,5 @@
 import { workWith } from "./constants";
-import {Check,CheckCheck} from 'lucide-react'
+// import {Check,CheckCheck} from 'lucide-react'
 const OurActivities = ({h1,pra})=>{
 
         return(
@@ -14,7 +14,8 @@ const OurActivities = ({h1,pra})=>{
                         {
                             workWith.map((item,index) => 
                                 <li className="list-none" key={index}>
-                                    <CheckCheck className="text-green-700 inline me-2"/> <span className="text-gray-600 font-serif font-bold text-xl">{item}</span> 
+                                    {/* <CheckCheck className="text-green-700 inline me-2"/>  */}
+                                    <span className="text-gray-600 font-serif font-bold text-xl">{item}</span> 
                                 </li>
                             )
                         }
